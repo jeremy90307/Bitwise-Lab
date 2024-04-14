@@ -2,21 +2,10 @@
 #include <stdint.h>
 #include <string.h>
 
-// static void str_add(char *b, char *a, char *res, size_t size)
-// {
-//     int carry = 0;
-
-//     for (int i = 0; i < size; i++) {
-//         int tmp = (b[i] - '0') + (a[i] - '0') + carry;
-//         carry = tmp / 10;
-//         tmp = tmp % 10;
-//         res[i] = tmp + '0';
-//     }
-// }
-
-#include <stdint.h>
-#include <stdio.h>
-
+/*
+Using bitwise operations to perform mod 10 and div 10.
+For more details, refer to https://web.archive.org/web/20180517023231/http://www.hackersdelight.org/divcMore.pdf
+*/
 int main()
 {
     for (int n = 0; n <= 19; n++) {
